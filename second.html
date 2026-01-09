@@ -9,12 +9,34 @@
     <p id="demo">Click on button to change the color of this paragraph</p>
     <button onclick="myFunction()">Try it</button>
 
+    
+    <h2>JavaScript Functions</h2>
+
+    <p>This example calls a function which performs a calculation and returns the result:</p>
+
+
+    <p id="demos"></p>
+
+    <!-- events in Javascript  -->
     <script>
         function myFunction() {
-            var x =document.getElementById("demo");
+            var x = document.getElementById("demo");
             x.style.color = "red";
         }
+
+        var x = myFunctions(4, 3);
+
+        document.getElementById("demos").innerHTML = x;
+
+        function myFunctions(a, b) {
+
+            return a * b;
+
+        }
     </script>
+
+
+    
 
     
 </body>
