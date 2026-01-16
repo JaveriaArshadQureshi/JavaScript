@@ -75,6 +75,53 @@
 // greeting = greeting + counter;
 // console.log(greeting); // -> Hello!100
 
-const greeting = "Hello!";
+// const greeting = "Hello!";
 
+// const greeting; // -> Uncaught SyntaxError: Missing initializer in const declaration
+// greeting = "Hello!";
 
+// const greeting = "Hello!";
+// greeting = "Hi!"; // -> Uncaught TypeError: Assignment to constant variable.
+
+// Scope Examples
+
+// let counter;
+// console.log(counter); // -> undefined
+// {
+//     counter = 1;
+//     console.log(counter); // -> 1
+// }
+// counter = counter + 1;
+// console.log(counter); // -> 2
+
+// let height = 180;
+// {
+//     let weight = 70;
+//     console.log(height); // -> 180
+//     console.log(weight); // -> 70
+// }
+// console.log(height); // -> 180
+//console.log(weight); // -> Uncaught ReferenceError: weight is not defined
+
+// let height = 200;
+// {
+//     let weight = 100;
+//     {
+//     let info = "tall";
+//     console.log(height); // -> 200
+//     console.log(weight); // -> 100
+//     console.log(info); // -> tall
+//     }
+//     console.log(height); // -> 200
+//     console.log(weight); // -> 100
+//     console.log(info); // -> Uncaught ReferenceError: info is not defined
+// }
+
+var height = 180;
+{
+    var weight = 70;
+    console.log(height); // -> 180
+    console.log(weight); // -> 70
+}
+console.log(height); // -> 180
+console.log(weight); // -> 70
