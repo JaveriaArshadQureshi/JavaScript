@@ -117,11 +117,77 @@
 //     console.log(info); // -> Uncaught ReferenceError: info is not defined
 // }
 
-var height = 180;
-{
-    var weight = 70;
-    console.log(height); // -> 180
-    console.log(weight); // -> 70
+// var height = 180;
+// {
+//     var weight = 70;
+//     console.log(height); // -> 180
+//     console.log(weight); // -> 70
+// }
+// console.log(height); // -> 180
+// console.log(weight); // -> 70
+
+// function testFunction() {
+//     console.log("Hello");
+//     console.log("World");
+// }
+
+// testFunction()
+
+// console.log("let's begin:"); // -> let's begin:
+// console.log("Hello"); // -> Hello
+// console.log("World"); // -> World
+// console.log("and again:"); // -> and again:
+// console.log("Hello"); // -> Hello
+// console.log("World"); // -> World
+// console.log("and once more:"); // -> and once more:
+// console.log("Hello"); // -> Hello
+// console.log("World"); // -> World
+
+// var globalGreeting = "Good ";
+   
+// function testFunction() {
+//     var localGreeting = "Morning ";
+//     console.log("function:");
+//     console.log(globalGreeting);
+//     console.log(localGreeting);
+// }
+   
+// testFunction();
+   
+// console.log("main program:");
+// console.log(globalGreeting);
+// // console.log(localGreeting); // -> Uncaught ReferenceError: localGreeting is not defined
+
+// Variable shadowing
+//JavaScript allows for variable shadowing. What does that mean? It means that we can declare a global variable and a local variable of the same name.
+
+// let counter = 100;
+// console.log(counter); // -> 100
+// {
+//     counter = 200;
+//     console.log(counter); // -> 200
+// }
+// console.log(counter); // -> 200
+
+
+
+// let counter = 100;
+// console.log(counter); // -> 100
+// {
+//     let counter = 200;
+//     console.log(counter); // -> 200
+// }
+// console.log(counter); // -> 100
+
+var counter = 100;
+   
+function testFunction() {
+    var counter = 200;
+    console.log(counter);
 }
-console.log(height); // -> 180
-console.log(weight); // -> 70
+   
+console.log(counter); // -> 100
+testFunction(); // -> 200
+console.log(counter); // -> 100
+
+
