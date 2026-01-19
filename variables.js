@@ -179,15 +179,34 @@
 // }
 // console.log(counter); // -> 100
 
-var counter = 100;
+// var counter = 100;
    
-function testFunction() {
-    var counter = 200;
-    console.log(counter);
-}
+// function testFunction() {
+//     var counter = 200;
+//     console.log(counter);
+// }
    
-console.log(counter); // -> 100
-testFunction(); // -> 200
-console.log(counter); // -> 100
+// console.log(counter); // -> 100
+// testFunction(); // -> 200
+// console.log(counter); // -> 100
 
 
+// var height = 180;
+// console.log(weight); // -> Uncaught ReferenceError: weight is not defined
+// console.log(height); // -> 180
+
+
+// var  height  =  180;
+// console.log(height);    //  ->  180
+// console.log(weight);    //  ->  undefined
+// var  weight  =  70;
+// console.log(weight);    //  ->  70
+
+
+// Hoisting in JavaScript means that declarations of variables and functions are moved to the top of their scope (before code execution), but not their values.
+// var weight;
+// var height = 180;
+// console.log(height); // -> 180
+// console.log(weight); // -> undefined
+// weight = 70;
+// console.log(weight); // -> 70
