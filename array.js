@@ -123,6 +123,14 @@ const number = [1, 2, 3, 4, 5];
 delete number[0];
 console.log(number); // -> [empty, 2, 3, 4, 5] 
 
+// slice() method
+// The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included).
+// Syntax: array.slice(start, end)
+const colors1 = ["Red", "Green", "Blue", "Yellow", "Purple"];
+let citrus = colors1.slice(1, 4);
+console.log(citrus); // -> ["Green", "Blue", "Yellow"]
+let citrus1 = colors1.slice(2);
+console.log(citrus1); // -> ["Blue", "Yellow", "Purple"]
 
 //splice() method
 // The splice() method adds/removes items to/from an array, and returns the removed item(s).
