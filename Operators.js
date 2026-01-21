@@ -168,3 +168,6 @@ console.log(j >>> 1); // -> 2 (Zero Fill Right Shift)
 // <	          less than	                             x < 5
 // >=	          greater than or equal to	             x >= 5
 // <=	          less than or equal to	                 x <= 5    
+
+let a1 = 6
+let b1 = 3
