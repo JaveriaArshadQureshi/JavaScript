@@ -4,23 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeTo("slow",0.5);
+                $("#div3").fadeIn(3000,"swing");
+            });
+
+            $("#btn1B").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+
+            $("#btn2").click(function(){
+                $("#div1").show();
+                $("#div2").show("slow");
+                $("#div3").show(3000);
+            });
+
+            $("#btn2B").click(function(){
+                $("#div1").hide();
+                $("#div2").hide("slow");
+                $("#div3").hide(3000);
+            });
+
+            $("#btn3").click(function(){
+                $("#div1").slideDown();
+                $("#div2").slideDown("slow");
+                $("#div3").slideDown(3000);
+            });
+
+            $("#btn3B").click(function(){
+                $("#div1").slideUp();
+                $("#div2").slideUp("slow");
+                $("#div3").slideUp(3000);
+            });
+        });
+
+
+    </script>
 </head>
 <body>
     <div>
         <h1>jQuery is easy to use</h1>
 
-        <button>Click to fadeIn</button>
-         <button>Click to fadeOut</button><br>
+        <button id="btn1">Click to fadeIn</button>
+         <button id="btn1B">Click to fadeOut</button><br>
 
-        <button>Click to show</button> 
-         <button>Click to hide</button><br>
-
-       <button>Click to slidedown</button>  
-         <button>Click to slideup</button><br>
+        <button id="btn2">Click to show</button> 
+         <button id="btn2B">Click to hide</button><br>
+         
+       <button id="btn3">Click to slidedown</button>  
+         <button id="btn3B">Click to slideup</button><br>
 
     <br>
-    <div
-
+    <div id="div1" style="width: 80px; height: 80px; display: none; background-color: red;"></div><br>
+     <div id="div1" style="width: 80px; height: 80px; display: none; background-color: blue;"></div><br>
+      <div id="div1" style="width: 80px; height: 80px; display: none; background-color:green;"></div><br>
+      End of the document.
 
 
     </div>
