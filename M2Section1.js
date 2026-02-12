@@ -10,23 +10,23 @@
 // use the previous variables for initialization). Display all inventory information in the console in the 
 // following form:
 
-let rose_price = 8;
-let lily_price = 10;
-let tulip_price = 2;
+let rosePrice = 8;
+let lilyPrice = 10;
+let tulipPrice = 2;
 
-let totalno_roses = 70;
-let totalno_lilies = 50;
-let totalno_tuplis = 120;
+let totalnoRoses = 70;
+let totalnoLilies = 50;
+let totalnoTuplis = 120;
 
-let value = rose_price * totalno_roses;
-console.log("Roses_total_price: ",value);
+let rosesValue = rosePrice * totalnoRoses;
+console.log("Rose  unit price:", rosePrice, ", quantity:", totalnoRoses, ", value:", rosesValue);
 
-let value1 = lily_price * totalno_lilies;
-console.log("Lilies_total_price: ",value);
+let liliesValue = lilyPrice * totalnoLilies;
+console.log("Lily  unit price:", lilyPrice, ", quantity:", totalnoLilies, ", value:", liliesValue);
 
-let value2 = tulip_price * totalno_tuplis;
-console.log("Tuplis_total_price: ",value);
+let tulipsValue = tulipPrice * totalnoTuplis;
+console.log("Tulip  unit price:", tulipPrice, ", quantity:", totalnoTuplis, ", value:", tulipsValue);
 
 
-let total = value + value1 + value2
-console.log("Total: ", total)
+let total = rosesValue + liliesValue + tulipsValue
+console.log("Total: ", total);
