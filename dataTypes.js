@@ -16,3 +16,14 @@ let  year  =  1990;
 let  typeOfYear  =  typeof  year;
 // console.log(typeOfYear);  //  ->  number
 console.log(typeof  typeOfYear);  //  ->  string
+
+
+let isDataValid = true;
+let isStringTooLong = false;
+let isGameOver = false;
+continueLoop = true;
+   
+console.log(false); // -> false
+console.log(typeof false); // -> boolean
+console.log(isDataValid); // -> true
+console.log(typeof isDataValid); // -> boolean
