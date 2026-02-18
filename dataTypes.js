@@ -27,3 +27,11 @@ console.log(false); // -> false
 console.log(typeof false); // -> boolean
 console.log(isDataValid); // -> true
 console.log(typeof isDataValid); // -> boolean
+
+const years = 1991;
+let delayInSeconds = 0.00016;
+let area = (16 * 3.14);
+let halfArea = area / 2;
+   
+console.log(years); // -> 1991;
+console.log(typeof year); // -> number;
